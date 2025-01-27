@@ -1,2 +1,21 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.primary-bg {
+background-color: #32CD32
+}
+.secondary-bg {
+  background-color:#FEBA6E
+}
+.common-bg{
+  background-color: #4169E1;
+}
+.primary-text{
+  color: #32CD32
+}
+.secondary-text{
+  color: #FEBA6E
+}
+.common-text{
+  color: #4169E1;
+}
