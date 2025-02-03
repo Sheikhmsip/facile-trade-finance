@@ -31,7 +31,7 @@ const About = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-white to-gray-100 text-gray-800 py-20">
+    <div className="bg-gradient-to-b from-white to-gray-100 text-gray-800 py-48">
       <motion.div
         className="container mx-auto px-4 max-w-6xl"
         variants={containerVariants}
@@ -40,7 +40,7 @@ const About = () => {
       >
         {/* Vision Section */}
         <motion.div className="text-center mb-16" variants={itemVariants}>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#32CD32] to-[#4169E1]">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#32CD32] to-[#4169E1] common-text">
             Our Vision
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -53,7 +53,7 @@ const About = () => {
         {/* Mission Section */}
         <div className="mb-16">
           <motion.h2
-            className="text-3xl md:text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-[#32CD32] to-[#4169E1]"
+            className="text-3xl md:text-5xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-[#32CD32] to-[#4169E1] common-text"
             variants={itemVariants}
           >
             Our Mission
