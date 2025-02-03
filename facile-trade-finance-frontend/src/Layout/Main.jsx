@@ -3,8 +3,10 @@ import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
 const Main = () => {
   return (
-    <div className="bg-white h-[5000px]">
-      <Navbar></Navbar>
+    <div className="bg-white">
+      <div className="relative w-[100%]">
+        <Navbar></Navbar>
+      </div>
       <Outlet></Outlet>
       <Footer />
     </div>
