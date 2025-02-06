@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 const Navbar = () => {
   return (
-    <div className="navbar h-28 common-bg opacity-90 z-50  fixed top-0 left-0  primary-text pr-10">
+    <div className="navbar h-28 common-bg opacity-90 z-100  fixed top-0 left-0  primary-text pr-10">
       <div className="navbar-start w-full ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
