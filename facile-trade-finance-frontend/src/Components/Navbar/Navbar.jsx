@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 const Navbar = () => {
   return (
-    <div className="navbar h-28 common-bg opacity-90 z-50  fixed top-0 left-0  primary-text pr-10">
+    <div className="navbar h-28  opacity-90 z-50  absolute top-0 left-0  primary-text pr-10">
       <div className="navbar-start w-full ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -55,32 +55,47 @@ const Navbar = () => {
           />
         </a>
       </div>
-      <div className="navbar-center hidden lg:flex border-2 rounded-full px-2 ">
+      <div className="navbar-center hidden lg:flex  px-2 ">
         <ul className="menu menu-horizontal text-xl font-bold lg:space-x-5 px-1">
           <li className="">
-            <Link role="link" className="button-hover-effect" to="/">Home</Link>
+            <Link role="link" className="button-hover-effect" to="/">
+              Home
+            </Link>
           </li>
           <li className="hover:bg-none">
             <details>
               <summary className="hover:bg-none w-full">
                 {" "}
-                <Link className="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[rgb(219,124,25)] after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 hover:bg-[rgb(14,85,120)] hover:text-white" to="/about">About</Link>
+                <Link
+                  className="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[rgb(219,124,25)] after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 hover:bg-[rgb(14,85,120)] hover:text-white"
+                  to="/about"
+                >
+                  About
+                </Link>
               </summary>
               <ul className="p-2 z-50">
                 <li>
-                  <Link className="button-hover-effect" to="#">Contact</Link>
+                  <Link className="button-hover-effect" to="#">
+                    Contact
+                  </Link>
                 </li>
                 <li>
-                  <Link className="button-hover-effect" to="#">Team Member</Link>
+                  <Link className="button-hover-effect" to="#">
+                    Team Member
+                  </Link>
                 </li>
               </ul>
             </details>
           </li>
           <li>
-            <Link className="button-hover-effect" to="/services">Services</Link>
+            <Link className="button-hover-effect" to="/services">
+              Services
+            </Link>
           </li>
           <li>
-            <Link className="button-hover-effect" to="/partners">Partners</Link>
+            <Link className="button-hover-effect" to="/partners">
+              Partners
+            </Link>
           </li>
         </ul>
       </div>
