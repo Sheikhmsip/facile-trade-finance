@@ -1,9 +1,10 @@
 import React from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineEmail, MdOutlineLocalPhone } from "react-icons/md";
+
 const Footer = () => {
   return (
-    <footer className="bg-white shadow-md rounded-xl w-full p-6 sm:p-9">
+    <footer className="bg-black text-white shadow-md rounded-xl w-full p-6 sm:p-9">
       <div className="flex justify-between items-center gap-[30px] flex-col sm:flex-row flex-wrap w-full">
         <div className="w-full sm:w-[25%] ">
           <img
@@ -11,6 +12,13 @@ const Footer = () => {
             alt="logo"
             className="w-[280px] mb-[20px]"
           />
+          <div className="text-white">
+          <h2 className="uppercase">
+          facile trade finance
+          </h2>
+          <p>All Rights Reserved by <span className="secondary-text underline cursor-pointer">facile trade finance</span></p> 
+          <p>© copy rights <span>{new Date().getFullYear()}</span></p>
+          </div>
           {/* <div className="flex flex-col gap-[20px] text-[#3B9DF8]">
             <span>
               <a className="text-[0.9rem] flex items-center gap-[8px] cursor-pointer">
@@ -37,20 +45,20 @@ const Footer = () => {
             <h3 className="text-[1.2rem] font-semibold text-[#424242] mb-2">
               Company
             </h3>
-            <div className="flex text-black flex-col gap-[10px]">
-              <p className="text-[0.9rem] text-[#424242] hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
+            <div className="flex flex-col gap-[10px]">
+              <p className="text-[0.9rem]  hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
                 About Us
               </p>
-              <p className="text-[0.9rem] text-[#424242] hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
+              <p className="text-[0.9rem]  hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
                 Contact
               </p>
-              <p className="text-[0.9rem] text-[#424242] hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
+              <p className="text-[0.9rem]  hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
                 Support
               </p>
-              <p className="text-[0.9rem] text-[#424242] hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
+              <p className="text-[0.9rem]  hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
                 Terms and Conditions
               </p>
-              <p className="text-[0.9rem] text-[#424242] hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
+              <p className="text-[0.9rem]  hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
                 Privacy Policy
               </p>
             </div>
@@ -86,23 +94,23 @@ const Footer = () => {
             <h3 className="text-[1.2rem] font-semibold text-[#424242] mb-2">
               Our Social Media
             </h3>
-            <div className="flex text-black flex-col gap-[10px]">
-              <p className="text-[0.9rem] text-[#424242] hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
+            <div className="flex  flex-col gap-[10px]">
+              <p className="text-[0.9rem]  hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
                 Dribble
               </p>
-              <p className="text-[0.9rem] text-[#424242] hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
+              <p className="text-[0.9rem]  hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
                 Behance
               </p>
-              <p className="text-[0.9rem] text-[#424242] hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
+              <p className="text-[0.9rem]  hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
                 Medium
               </p>
-              <p className="text-[0.9rem] text-[#424242] hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
+              <p className="text-[0.9rem]  hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
                 Instagram
               </p>
-              <p className="text-[0.9rem] text-[#424242] hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
+              <p className="text-[0.9rem]  hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
                 Facebook
               </p>
-              <p className="text-[0.9rem] text-[#424242] hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
+              <p className="text-[0.9rem]  hover:text-[#3B9DF8] cursor-pointer transition-all duration-200">
                 Twitter
               </p>
             </div>
