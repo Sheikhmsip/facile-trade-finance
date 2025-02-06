@@ -41,9 +41,10 @@ background-color:rgb(120,190,76)
 .button-hover-effect:hover::after {
   transform-origin: bottom left;
   transform: scaleX(1);
+
 }
 
 .button-hover-effect:hover {
-  background-color: rgb(14, 85, 120);
+  /* background-color: rgb(14, 85, 120); */
   color: white;
 }
