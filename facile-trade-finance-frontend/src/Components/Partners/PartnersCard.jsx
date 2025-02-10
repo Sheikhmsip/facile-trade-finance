@@ -5,7 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import PartnersImg from "./PartnersImg";
 
-export const PartnersCard = ({ testimonials, autoplay = false }) => {
+const PartnersCard = ({ testimonials, autoplay = false }) => {
+
   const [active, setActive] = useState(0);
 
   const handleNext = () => {
@@ -27,8 +28,10 @@ export const PartnersCard = ({ testimonials, autoplay = false }) => {
 
   const randomRotateY = () => Math.floor(Math.random() * 21) - 10;
 
+  const path = location.pathname == "/partners"
+
   return (
-    <div className="mt-28 w-[90%] mx-auto">
+    <div data-aos="fade-up-left" data-aos-duration="1000" className= {`${path ? "pt-35": "pt-20" } w-[90%] mx-auto`}>
     <h1 className="md:text-4xl text-2xl w-[70%] underline mx-auto common-text font-extrabold uppercase pt-10">Our Trusted Partners</h1>
     <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-16">
       <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20">
@@ -123,3 +126,4 @@ export const PartnersCard = ({ testimonials, autoplay = false }) => {
     </div>
   );
 };
+export default PartnersCard;

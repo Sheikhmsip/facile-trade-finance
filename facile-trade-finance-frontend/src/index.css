@@ -1,23 +1,38 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+/* Font */
+
+.primary-font {
+  font-family: "Dosis", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.common-font{
+  font-family: "Dosis", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+/* Common BG Color  */
 .primary-bg {
-background-color:rgb(120,190,76)
+background-color:#79BF4C
 }
 .secondary-bg {
-  background-color:rgb(219,124,25)
+  background-color:#F19131
 }
 .common-bg{
-  background-color: #06547B;
+  background-color: #1D6B94;
 }
 .primary-text{
-  color: #32CD32
+  color: #79BF4C
 }
 .secondary-text{
-  color: #FEBA6E
+  color: #F19131
 }
 .common-text{
-  color: #045B88;
+  color: #1D6B94;
 }
 
 /* animated button */

@@ -1,6 +1,10 @@
-import { PartnersCard } from "../../Components/Partners/PartnersCard.jsx";
+import PartnersCard from "../../Components/Partners/PartnersCard";
 
-export default function AnimatedTestimonialsDemo() {
+import React from 'react';
+
+
+
+const Partners = () => {
   const testimonials = [
     {
       quote:
@@ -26,3 +30,5 @@ export default function AnimatedTestimonialsDemo() {
   ];
   return <PartnersCard testimonials={testimonials} />;
 }
+
+export default Partners;
