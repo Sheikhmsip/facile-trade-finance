@@ -23,37 +23,38 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content  rounded-box z-50 p-2 shadow secondary-bg opacity-45"
+            className="menu dropdown-content  rounded-box z-50 p-2 shadow bg-white"
           >
             <li>
-              <Link to="/">Home</Link>
+              <Link className="button-hover-effect" to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link className="button-hover-effect" to="/about">About</Link>
               <ul className="p-2 secondary-text z-50">
                 <li>
-                  <a>Contact</a>
+                  <Link className="button-hover-effect">Contact</Link>
                 </li>
                 <li>
-                  <a>Team Member</a>
+                  <Link className="button-hover-effect">Team Member</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a>Services</a>
+              <Link className="button-hover-effect" to="/services">Services</Link>
             </li>
             <li>
-              <a>Partners</a>
+              <Link className="button-hover-effect" to="/partners">Partners</Link>
             </li>
           </ul>
         </div>
-        <a className="ml-60 lg:ml-2">
+        <Link to="/" className=" lg:ml-2">
           <img
             className="w-40"
-            src="https://i.ibb.co.com/5c7hzGJ/Whats-App-Image-2025-01-27-at-12-55-09-8f8c5971-removebg-preview.png"
+            src="https://i.ibb.co.com/qL7mQzj3/faciletradefinance.png"
             alt=""
           />
-        </a>
+        </Link>
+        <h2 className="common-font md:text-3xl lg:text-3xl text-2xl secondary-text"> <Link to="/">Facile Trade Finance</Link></h2>
       </div>
       <div className="navbar-center hidden lg:flex  px-2 ">
         <ul className="menu menu-horizontal text-xl font-bold lg:space-x-5 px-1">
@@ -66,10 +67,7 @@ const Navbar = () => {
             <details>
               <summary className="hover:bg-none w-full">
                 {" "}
-                <Link
-                  className="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[rgb(219,124,25)] after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 hover:bg-[rgb(14,85,120)] hover:text-white"
-                  to="/about"
-                >
+                <Link to="/about" className="button-hover-effect">
                   About
                 </Link>
               </summary>

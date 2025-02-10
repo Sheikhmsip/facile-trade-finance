@@ -1,5 +1,5 @@
 import React from "react";
-import { ContainerScroll } from "../../Components/ContainerScroll/ContainerScroll ";
+import { ContainerScroll } from "../ContainerScroll/ContainerScroll ";
 import video from "../../../src/assets/video/FacileTreadFinance.mp4";
 
 export function Video() {
@@ -8,10 +8,10 @@ export function Video() {
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="text-4xl font-semibold text-black dark:text-white">
+            <h1 className="text-4xl font-semibold pb-10 secondary-text primary-font dark:text-white">
               Unleash the power of <br />
-              <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-                Scroll Animations
+              <span className="text-4xl md:text-[6rem] font-bold mt-1 common-text leading-none">
+                Tread Finance
               </span>
             </h1>
           </>

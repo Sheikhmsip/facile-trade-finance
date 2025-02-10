@@ -13,7 +13,7 @@ const Banner = () => {
             className="w-full h-[300px] lg:h-full object-cover opacity-40"
           />
           <div className="absolute  lg:mx-40 top-1/2 left-4 sm:left-6 md:left-8 lg:left-10 transform -translate-y-1/2 text-left text-white space-y-2 sm:space-y-3 md:space-y-4 max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-full">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl  font-bold leading-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl  font-bold primary-font leading-tight">
               The Trusted Network for Global Trade
             </h1>
             <p className="text-sm sm:text-base md:text-lg lg:text-2xl my-4">

@@ -6,8 +6,11 @@ import {
   BsBullseye,
 } from "react-icons/bs";
 import { motion } from "framer-motion";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+  AOS.init();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -31,7 +34,7 @@ const About = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-white to-gray-100 text-gray-800 py-48">
+    <div className="bg-gradient-to-b from-white to-gray-100 text-gray-800 py-10">
       <motion.div
         className="container mx-auto px-4 max-w-6xl"
         variants={containerVariants}
@@ -39,11 +42,11 @@ const About = () => {
         animate="visible"
       >
         {/* Vision Section */}
-        <motion.div className="text-center mb-16" variants={itemVariants}>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#32CD32] to-[#4169E1] common-text">
+        <motion.div className="text-center py-10" variants={itemVariants}>
+          <h2 data-aos="fade-right" data-aos-duration="1000" className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#32CD32] to-[#4169E1] common-text primary-font underline py-5">
             Our Vision
           </h2>
-          <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p data-aos="fade-left" data-aos-duration="1000" className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed common-font">
             Facile Trade Finance is established with a vision to set a standard
             of assisting the financial needs of the stakeholders and to be the
             best example of as a Financial consultant in Bangladesh Economy.
@@ -51,9 +54,9 @@ const About = () => {
         </motion.div>
 
         {/* Mission Section */}
-        <div className="mb-16">
+        <div className="common-font">
           <motion.h2
-            className="text-3xl md:text-5xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-[#32CD32] to-[#4169E1] common-text"
+            className="text-3xl md:text-5xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-[#32CD32] to-[#4169E1] common-text primary-font underline"
             variants={itemVariants}
           >
             Our Mission
@@ -62,12 +65,12 @@ const About = () => {
             className="grid md:grid-cols-2 gap-8"
             variants={containerVariants}
           >
-            <motion.div
+            <motion.div 
               className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-[#32CD32]"
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
             >
-              <div className="flex items-start gap-4">
+              <div data-aos="fade-down-right" data-aos-duration="1000"  className="flex items-start gap-4">
                 <BsCheckCircleFill className="w-8 h-8 text-[#32CD32] flex-shrink-0" />
                 <p className="text-gray-700">
                   Seamless, efficient services provided Zero tolerance in
@@ -81,7 +84,7 @@ const About = () => {
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
             >
-              <div className="flex items-start gap-4">
+              <div data-aos="fade-down-left" data-aos-duration="1000" className="flex items-start gap-4">
                 <BsPeopleFill className="w-8 h-8 text-[#FEBA6E] flex-shrink-0" />
                 <p className="text-gray-700">
                   Ensuring smooth deliverables with highest commitment to the
@@ -95,7 +98,7 @@ const About = () => {
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
             >
-              <div className="flex items-start gap-4">
+              <div data-aos="fade-up-right" data-aos-duration="1000" className="flex items-start gap-4">
                 <BsBuildingsFill className="w-8 h-8 text-[#4169E1] flex-shrink-0" />
                 <p className="text-gray-700">
                   Fair & competitive offers to the beneficiaries
@@ -108,7 +111,7 @@ const About = () => {
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
             >
-              <div className="flex items-start gap-4">
+              <div data-aos="fade-up-left" data-aos-duration="1000" className="flex items-start gap-4">
                 <BsBullseye className="w-8 h-8 text-[#32CD32] flex-shrink-0" />
                 <p className="text-gray-700">
                   Reach countries top most customers with diversified offers for
