@@ -2,8 +2,8 @@ import { Link } from "react-router";
 
 const Navbar = () => {
   return (
-    <div className="navbar h-28  opacity-90 z-50  absolute top-0 left-0  primary-text pr-10">
-      <div className="navbar-start w-full ">
+    <div className="navbar h-28 opacity-90 z-50 top-0 left-0 primary-text pr-10">
+      <div className="navbar-start w-full">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -47,7 +47,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <Link to="/" className=" lg:ml-2">
+        <Link to="/" className="lg:ml-2">
           <img
             className="w-40"
             src="https://i.ibb.co.com/qL7mQzj3/faciletradefinance.png"

@@ -6,8 +6,7 @@ import {
   BsBullseye,
 } from "react-icons/bs";
 import { motion } from "framer-motion";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
 
 const About = () => {
   AOS.init();
@@ -43,10 +42,18 @@ const About = () => {
       >
         {/* Vision Section */}
         <motion.div className="text-center py-10" variants={itemVariants}>
-          <h2 data-aos="fade-right" data-aos-duration="1000" className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#32CD32] to-[#4169E1] common-text primary-font underline py-5">
+          <h2
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#32CD32] to-[#4169E1] common-text primary-font underline py-5"
+          >
             Our Vision
           </h2>
-          <p data-aos="fade-left" data-aos-duration="1000" className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed common-font">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed common-font"
+          >
             Facile Trade Finance is established with a vision to set a standard
             of assisting the financial needs of the stakeholders and to be the
             best example of as a Financial consultant in Bangladesh Economy.
@@ -65,12 +72,16 @@ const About = () => {
             className="grid md:grid-cols-2 gap-8"
             variants={containerVariants}
           >
-            <motion.div 
+            <motion.div
               className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-[#32CD32]"
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
             >
-              <div data-aos="fade-down-right" data-aos-duration="1000"  className="flex items-start gap-4">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                className="flex items-start gap-4"
+              >
                 <BsCheckCircleFill className="w-8 h-8 text-[#32CD32] flex-shrink-0" />
                 <p className="text-gray-700">
                   Seamless, efficient services provided Zero tolerance in
@@ -84,7 +95,11 @@ const About = () => {
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
             >
-              <div data-aos="fade-down-left" data-aos-duration="1000" className="flex items-start gap-4">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                className="flex items-start gap-4"
+              >
                 <BsPeopleFill className="w-8 h-8 text-[#FEBA6E] flex-shrink-0" />
                 <p className="text-gray-700">
                   Ensuring smooth deliverables with highest commitment to the
@@ -98,7 +113,11 @@ const About = () => {
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
             >
-              <div data-aos="fade-up-right" data-aos-duration="1000" className="flex items-start gap-4">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                className="flex items-start gap-4"
+              >
                 <BsBuildingsFill className="w-8 h-8 text-[#4169E1] flex-shrink-0" />
                 <p className="text-gray-700">
                   Fair & competitive offers to the beneficiaries
@@ -111,7 +130,11 @@ const About = () => {
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
             >
-              <div data-aos="fade-up-left" data-aos-duration="1000" className="flex items-start gap-4">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                className="flex items-start gap-4"
+              >
                 <BsBullseye className="w-8 h-8 text-[#32CD32] flex-shrink-0" />
                 <p className="text-gray-700">
                   Reach countries top most customers with diversified offers for

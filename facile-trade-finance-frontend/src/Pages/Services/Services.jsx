@@ -91,7 +91,8 @@ const Services = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, index) => (
-          <div data-aos="zoom-in-up" data-aos-duration="1000"
+          <div data-aos="fade-up"
+     data-aos-duration="1000"
             key={index}
             className={`p-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 ${service.bgClass} ${service.hoverBgClass} hover:shadow-lg`}
           >
